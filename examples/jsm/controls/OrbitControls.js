@@ -54,7 +54,7 @@ var OrbitControls = function ( object, domElement ) {
 
 	// This option actually enables dollying in and out; left as "zoom" for backwards compatibility.
 	// Set to false to disable zooming
-	this.enableZoom = true;
+	this.enableZoom = false;
 	this.zoomSpeed = 1.0;
 
 	// Set to false to disable rotating
@@ -62,15 +62,15 @@ var OrbitControls = function ( object, domElement ) {
 	this.rotateSpeed = 1.0;
 
 	// Set to false to disable panning
-	this.enablePan = true;
+	this.enablePan = false;
 	this.panSpeed = 1.0;
 	this.screenSpacePanning = true; // if false, pan orthogonal to world-space direction camera.up
 	this.keyPanSpeed = 7.0;	// pixels moved per arrow key push
 
 	// Set to true to automatically rotate around the target
 	// If auto-rotate is enabled, you must call controls.update() in your animation loop
-	this.autoRotate = false;
-	this.autoRotateSpeed = 2.0; // 30 seconds per orbit when fps is 60
+	this.autoRotate = true;
+	this.autoRotateSpeed = 1.0; // 30 seconds per orbit when fps is 60
 
 	// The four arrow keys
 	this.keys = { LEFT: 37, UP: 38, RIGHT: 39, BOTTOM: 40 };
